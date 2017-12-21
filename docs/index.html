@@ -80,8 +80,10 @@
             addrEnglish : data.roadAddressEnglish
         };
         
+        // 안드로이드
         window.Android.processDATA(data.postcode + "," + data.zonecode + "," + fullRoadAddr + "," + data.roadAddressEnglish);
-        //window.postMessageToiOS(postData);
+        // iOS
+        window.postMessageToiOS(postData);
       },
       width : '100%',
       height : '100%'
