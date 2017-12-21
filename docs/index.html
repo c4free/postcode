@@ -80,10 +80,23 @@
             addrEnglish : data.roadAddressEnglish
         };
         
+        var varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+        if (varUA.match('android') != null) { 
+        //안드로이드 일때 처리
+            window.Android.processDATA(data.postcode + "," + data.zonecode + "," + fullRoadAddr + "," + data.roadAddressEnglish);
+        } 
+        else if (varUA.indexOf("iphone")>-1||varUA.indexOf("ipad")>-1||varUA.indexOf("ipod")>-1) { 
+        //IOS 일때 처리
+            window.postMessageToiOS(postData);
+        } 
+        else {
+        //아이폰, 안드로이드 외 처리
+        }
+
         // 안드로이드
-        window.Android.processDATA(data.postcode + "," + data.zonecode + "," + fullRoadAddr + "," + data.roadAddressEnglish);
+        //window.Android.processDATA(data.postcode + "," + data.zonecode + "," + fullRoadAddr + "," + data.roadAddressEnglish);
         // iOS
-        window.postMessageToiOS(postData);
+        //window.postMessageToiOS(postData);
       },
       width : '100%',
       height : '100%'
