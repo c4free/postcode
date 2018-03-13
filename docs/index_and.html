@@ -73,11 +73,19 @@
           fullRoadAddr += extraRoadAddr;
         }
         
+	/*
         var postData = {
             postcode : data.postcode,
             zonecode : data.zonecode,
             addr : fullRoadAddr,
             addrEnglish : data.roadAddressEnglish
+        };
+	*/
+	var postData = {
+            postcode : data.postcode,
+            zonecode : data.zonecode,
+            addr : data.address,
+            addrEnglish : data.addressEnglish
         };
         
         /*
