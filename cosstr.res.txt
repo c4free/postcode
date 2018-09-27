@@ -1,0 +1,5 @@
+
+"ver"="20180927.1";
+"STR_COMMON_SIGNUP.en"="Sign-up";
+"STR_COMMON_SIGNUP.ko"="사인업";
+
