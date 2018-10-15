@@ -1,11 +1,11 @@
 {
-    “build”:”112”,
-    “en”:{
-        “STR_COMMON_SIGNUP”:”Sign-up”,
-        “STR_COMMON_FINDACCOUNT”:”Find-account”,
+    "build":"112",
+    "en":{
+        "STR_COMMON_SIGNUP":"Sign-up",
+        "STR_COMMON_FINDACCOUNT":"Find-account"
     },
-    “ko”:{
-        “STR_COMMON_SIGNUP”:”회원-가입”,
-        “STR_COMMON_FINDACCOUNT”:”계정-찾기”,
-    },
+    "ko":{
+        "STR_COMMON_SIGNUP":"회원-가입",
+        "STR_COMMON_FINDACCOUNT":"계정-찾기"
+    }
 }
